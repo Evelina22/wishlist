@@ -1,0 +1,157 @@
+.wishlist-page {
+  min-height: 100vh;
+  background: #f0f7f0;
+}
+
+/* ─── Шапка сайта ────────────────────────────────────────────────────────────*/
+.wishlist-header {
+  background: white;
+
+  padding: 16px 32px;
+  /* 16px по вертикали, 32px по бокам */
+
+  display: flex;
+  justify-content: space-between;
+  /* space-between - левая группа влево, правая вправо */
+  align-items: center;
+  /* По центру по вертикали */
+
+  box-shadow: 0 2px 12px rgba(45, 110, 45, 0.1);
+  /* Лёгкая тень снизу - отделяет шапку от контента */
+
+  position: sticky;
+  top: 0;
+  /* sticky + top: 0 - шапка прилипает к верху при прокрутке
+     В отличие от fixed - не перекрывает контент, занимает место в потоке */
+
+  z-index: 10;
+  /* z-index: 10 - шапка поверх карточек при прокрутке
+     Чем больше число, тем ближе к нам */
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2d6e2d;
+}
+
+.header-user {
+  font-size: 14px;
+  color: #7a9e7a;
+  /* Приглушённый зелёный */
+
+  margin-left: 16px;
+}
+
+.header-right {
+  display: flex;
+  gap: 12px;
+  /* gap - расстояние между кнопками внутри правой группы */
+  align-items: center;
+}
+
+/* ─── Кнопка "добавить желание" ─────────────────────────────────────────────*/
+.btn-add {
+  background: #4a9e4a;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-add:hover {
+  background: #2d6e2d;
+  /* При наведении темнеет */
+}
+
+/* ─── Кнопка выхода ──────────────────────────────────────────────────────────*/
+.btn-logout {
+  background: transparent;
+  color: #aaa;
+  border: 2px solid #ddd;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ─── Сетка карточек ─────────────────────────────────────────────────────────*/
+.cards-grid {
+  display: grid;
+  /* CSS Grid - двумерная сетка */
+
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  /* repeat(auto-fill, ...) - браузер сам решает сколько колонок влезет
+     minmax(280px, 1fr) - каждая колонка минимум 280px, максимум растягивается равномерно
+     Это адаптивная сетка БЕЗ медиазапросов:
+     - широкий экран → 4 колонки
+     - средний → 3 колонки
+     - узкий → 2 колонки
+     - мобилка → 1 колонка */
+
+  gap: 24px;
+  /* Расстояние между карточками */
+
+  padding: 32px;
+  /* Отступы по краям сетки */
+}
+
+/* ─── Заглушка когда список пустой ──────────────────────────────────────────*/
+.empty {
+  text-align: center;
+  padding: 100px 20px;
+  color: #7a9e7a;
+  font-size: 20px;
+}
+
+/* ─── Тёмный фон модального окна ────────────────────────────────────────────*/
+.modal-overlay {
+  position: fixed;
+  /* fixed - фиксируется относительно окна браузера, не прокручивается */
+
+  inset: 0;
+  /* Сокращение для: top: 0; right: 0; bottom: 0; left: 0
+     Растягивает элемент на весь экран */
+
+  background: rgba(0, 0, 0, 0.4);
+  /* Полупрозрачный чёрный фон - 40% непрозрачности */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Центрирует белое окно внутри тёмного фона */
+
+  z-index: 100;
+  /* Поверх всего остального (шапка была 10, окно 100) */
+}
+
+/* ─── Белое модальное окно ───────────────────────────────────────────────────*/
+.modal-box {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+
+  width: 100%;
+  max-width: 480px;
+  /* Адаптивная ширина: не шире 480px, но сужается на маленьких экранах */
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  /* Сильная тень - окно "выплывает" над страницей */
+}
+
+.modal-box h2 {
+  margin-bottom: 24px;
+  color: #2d4a2d;
+  font-size: 22px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+  /* Кнопки "Добавить" и "Отмена" рядом */
+}
