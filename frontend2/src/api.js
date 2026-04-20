@@ -1,4 +1,4 @@
-const BASE = "http://localhost:5000";
+const BASE = "https://wishlist-backend-8j7x.onrender.com";
 // Адрес сервера Flask
 // Когда выложишь на хостинг - поменяй на реальный адрес
 
