@@ -11,7 +11,7 @@ app = Flask(__name__)
 CORS(app, supports_credentials=True)
 
 SECRET_KEY = "bithday"
-OWNER_USERNAME = "Aizhamal"
+OWNER_USERNAME = "Aijamal"
 
 DATABASE_URL = os.environ.get("DATABASE_URL")
 
