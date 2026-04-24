@@ -8,7 +8,7 @@
   justify-content: center;
   /* Flexbox центрирует блок входа по вертикали и горизонтали */
 
-  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 50%, #a5d6a7 100%);
+  background: linear-gradient(135deg, #e8f5e9 0%, #0a96d1 50%, #1106eb 100%);
   /* Градиент из трёх оттенков зелёного:
      0% - очень светлый (почти белый)
      50% - средний
@@ -50,14 +50,14 @@
 
 .login-box h1 {
   font-size: 26px;
-  color: #2d4a2d;
+  color: #0a0475;
   margin-bottom: 6px;
   font-weight: 700;
   /* Жирный заголовок */
 }
 
 .login-sub {
-  color: #7a9e7a;
+  color: #2910b2;
   /* Приглушённый зелёный для подзаголовка */
 
   margin-bottom: 28px;
@@ -76,7 +76,7 @@
 .btn-link {
   background: none;
   border: none;
-  color: #4a9e4a;
+  color: #190d3b;
   /* Зелёный цвет как у ссылки */
 
   font-size: 14px;

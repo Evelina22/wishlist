@@ -66,12 +66,12 @@
 
 .card-body h3 {
   font-size: 18px;
-  color: #2d4a2d;
+  color: #313576;
   margin-bottom: 8px;
 }
 
 .card-comment {
-  color: #7a9e7a;
+  color: #383be9;
   /* Приглушённый зелёный для комментария */
 
   font-size: 14px;
@@ -86,7 +86,7 @@
   display: inline-block;
   /* inline-block чтобы margin-bottom работал (у inline не работает) */
 
-  color: #4a9e4a;
+  color: #1d1b84;
   text-decoration: none;
   /* Убираем стандартное подчёркивание ссылки */
 
@@ -127,10 +127,10 @@
   background: #e8f5e9;
   /* Светло-зелёный фон */
 
-  color: #4a9e4a;
+  color: #1c2163;
   /* Зелёный текст */
 
-  border: 2px solid #4a9e4a;
+  border: 2px solid #4a529e;
   /* Зелёная рамка вместо заливки */
 }
 
@@ -159,7 +159,7 @@
   /* Block чтобы занимал всю строку */
 
   font-size: 14px;
-  color: #7a9e7a;
+  color: #364589;
   margin-bottom: 10px;
 }
 

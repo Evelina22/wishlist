@@ -18,7 +18,7 @@ body {
   background: #f0f7f0;
   /* Очень светлый зелёный фон - основной цвет темы */
 
-  color: #2d4a2d;
+  color: #1919ab;
   /* Тёмно-зелёный цвет текста по умолчанию для всей страницы */
 
   min-height: 100vh;
@@ -50,7 +50,7 @@ input, textarea {
 
   font-size: 15px;
   background: #fff;
-  color: #2d4a2d;
+  color: #1a3287;
 
   outline: none;
   /* Убираем стандартную синюю обводку браузера при фокусе
@@ -67,7 +67,7 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-  border-color: #4a9e4a;
+  border-color: #1999dd;
   /* При клике на поле рамка становится ярко-зелёной */
 }
 
@@ -83,7 +83,7 @@ textarea {
 /* ─── Основная зелёная кнопка ────────────────────────────────────────────────
    Используется для входа, добавления товара и т.д. */
 .btn-main {
-  background: linear-gradient(135deg, #4a9e4a, #2d6e2d);
+  background: linear-gradient(135deg, #4d86dc, #3544d2);
   /* Градиент под углом 135° от светло-зелёного к тёмно-зелёному */
 
   color: white;
@@ -109,7 +109,7 @@ textarea {
   transform: translateY(-2px);
   /* При наведении кнопка чуть поднимается вверх на 2px */
 
-  box-shadow: 0 6px 20px rgba(74, 158, 74, 0.4);
+  box-shadow: 0 6px 20px rgba(74, 74, 158, 0.4);
   /* Зелёная тень снизу - эффект "парения"
      rgba(74, 158, 74, 0.4) - зелёный цвет с прозрачностью 40% */
 }

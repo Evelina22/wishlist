@@ -32,12 +32,12 @@
 .logo {
   font-size: 22px;
   font-weight: 700;
-  color: #2d6e2d;
+  color: #372d6e;
 }
 
 .header-user {
   font-size: 14px;
-  color: #7a9e7a;
+  color: #7c7a9e;
   /* Приглушённый зелёный */
 
   margin-left: 16px;
@@ -52,7 +52,7 @@
 
 /* ─── Кнопка "добавить желание" ─────────────────────────────────────────────*/
 .btn-add {
-  background: #4a9e4a;
+  background: #37399b;
   color: white;
   border: none;
   padding: 10px 22px;
@@ -64,7 +64,7 @@
 }
 
 .btn-add:hover {
-  background: #2d6e2d;
+  background: #1f187b;
   /* При наведении темнеет */
 }
 
@@ -104,7 +104,7 @@
 .empty {
   text-align: center;
   padding: 100px 20px;
-  color: #7a9e7a;
+  color: #545bd8;
   font-size: 20px;
 }
 
@@ -145,7 +145,7 @@
 
 .modal-box h2 {
   margin-bottom: 24px;
-  color: #2d4a2d;
+  color: #3724af;
   font-size: 22px;
 }
 

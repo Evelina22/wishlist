@@ -27,7 +27,7 @@ export default function Login({ onLogin }) {
   return (
     <div className="login-page">
       <div className="login-box">
-        <div className="login-leaf">😇</div>
+        <div className="login-leaf">😋</div>
         <h1>Вишлист Айжамал</h1>
         <p className="login-sub">
           {mode === "login" ? "Войди чтобы посмотреть" : "Создай аккаунт"}

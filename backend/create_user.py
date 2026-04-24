@@ -18,5 +18,5 @@ def create_user(username, password):
     print(f" Пользователь '{username}' создан!")
 
 
-create_user("Aizhamal", "10072009")
+create_user("Aijamal", "10062009")
 create_user("Evelina", "22022010E")
